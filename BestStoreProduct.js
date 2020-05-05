@@ -48,12 +48,15 @@
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
             this._props = { ...this._props, ...changedProperties };
-            if ("magasin" in changedProperties) {
-				getProductData(changedProperties["magasin"])
+            if ("store" in changedProperties) {
+				getProductData(changedProperties["store"])
 			}
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
+            if ("store" in changedProperties) {
+				this._store = changedProperties["store"];
+			}
         }
         
         getProductData(sMagasin) {

@@ -23,17 +23,17 @@
 			"description": "Store ID"
 		},
 		"dtBeging": {
-			"type": "date",
+			"type": "string",
 			"description": "Begin date"
 		},
         "dtEnd": {
-			"type": "date",
+			"type": "string",
 			"description": "End date"
 		},
         "genre": {
 			"type": "string",
 			"description": "Genre ouvrage"
-		},
+		}
 	},
 	"methods": {
 		"setStore": {
