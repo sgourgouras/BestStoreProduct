@@ -1,0 +1,61 @@
+{
+	"id": "ar.sample.BestStoreProduct",
+	"version": "1.0.0",
+	"name": "BestStoreProduct",
+	"description": "Best store product",
+	"newInstancePrefix": "BestStoreProduct",
+	"icon": "https://github.com/sgourgouras/BestStoreProduct/icon.png",
+	"vendor": "Augusta Reeves",
+	"eula": "",
+	"license": "MIT",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "ar-sample-beststoreproduct",
+			"url": "https://github.com/sgourgouras/BestStoreProduct/BestStoreProduct.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"store": {
+			"type": "string",
+			"description": "Store ID"
+		},
+		"dtBeging": {
+			"type": "date",
+			"description": "Begin date"
+		},
+        "dtEnd": {
+			"type": "date",
+			"description": "End date"
+		},
+        "genre": {
+			"type": "string",
+			"description": "Genre ouvrage"
+		},
+	},
+	"methods": {
+		"setStore": {
+			"description": "set store ID",
+			"parameters": [
+				{
+					"name": "store",
+					"type": "string",
+					"description": "Store ID"
+				}
+			],
+			"body": "this.store = store;"
+		},
+		"getStore": {
+			"returnType": "string",
+			"description": "Returns store ID.",
+			"body": "return this.store;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks somewhere (map purpose)."
+		}
+	}
+}
