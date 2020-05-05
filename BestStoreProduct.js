@@ -2,11 +2,11 @@
 	let template = document.createElement("template");
     template.innerHTML = `
         <div class="flexbox">
-            <h2>Top 1 Product - <span store /></h2>
+            <h2>Top 1 Product - <span store></span></h2>
             <img couv alt="couverture" />
-            <h3 title />
-            <p genre />
-            <p nbSold />
+            <h3 title></h3>
+            <p genre></p>
+            <p nbSold></p>
         </div>
 		<style>
 		:host {
@@ -38,6 +38,11 @@
             this._title     = this.shadowRoot.querySelector("[title]");
             this._nbSold    = this.shadowRoot.querySelector("[nbSold]");
             this._genre     = this.shadowRoot.querySelector("[genre]");
+
+            this._couv.setAttribute("src", "test");
+            this._magasin.innerHTML = "toto";
+            this._title.innerHTML = "oProduct.title";
+            this._nbSold.innerHTML = "oProduct.nbSold";
 
 			window.addEventListener("click", event => {
 				var event = new Event("onClick");
@@ -74,5 +79,5 @@
         }
 	}
 
-	customElements.define("ar-sample-beststoreproduct", BestStoreProduct);
+	customElements.define("best-store-product", BestStoreProduct);
 })();

@@ -4,15 +4,15 @@
 	"name": "BestStoreProduct",
 	"description": "Best store product",
 	"newInstancePrefix": "BestStoreProduct",
-	"icon": "https://github.com/sgourgouras/BestStoreProduct/icon.png",
+	"icon": "",
 	"vendor": "Augusta Reeves",
 	"eula": "",
 	"license": "MIT",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "ar-sample-beststoreproduct",
-			"url": "https://github.com/sgourgouras/BestStoreProduct/BestStoreProduct.js",
+			"tag": "best-store-product",
+			"url": "https://raw.githubusercontent.com/sgourgouras/BestStoreProduct/master/BestStoreProduct.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
